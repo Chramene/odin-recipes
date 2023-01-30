@@ -1,16 +1,44 @@
 <!DOCTYPE html>
+<!-- declaration defines that this document is an HTML5 document-->
 <html lang="en">
+    <!--The <html> element is the root element of an HTML page.
+        lang="en" establishes the language to english "en"-->
 <head>
+    <!--The <head> element contains meta information about the HTML page-->
     <meta charset="UTF-8">
+    <!--charset chooses character encoding which UTF-8 is encouraged to be used-->
     <title>Odin-Recipes</title>
+    <!--The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+--> 
+    <link rel="stylesheet" href="style.css">
+    <!-- we add a self-closing <link> element inside of the opening and closing <head> tags of the HTML file.
+        The href attribute is the location of the CSS file, either an absolute URL or, what you’ll be utilizing, a URL relative to the location of the HTML file
+        The rel attribute is required, and it specifies the relationship between the HTML file and the linked file.
+        -->
 </head>
-<body>
-    <h1>Filipino Recipes</h1>
-    <img src="img/Frecipes.jpeg">
-    <ul>
-        <li><a href="recipes/PorkandPotatoAdobo.html">Pork and Potato Adobo</a></li>
+<body> <!--The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+-->
+    <h1>Filipino Recipes</h1> <!--The <h1> element defines a large heading, <h1> to <h6> descends to a smaller heading-->
+    <img src="img/Frecipes.jpeg" alt="Delicious Filipino Recipes you should try" style="float:none;width:12;height:200;"> 
+        <!--Use the HTML <img> element to define an image
+            Use the HTML src attribute to define the URL of the image
+            Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+            Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+            Use the CSS float property to let the image float to the left or to the right
+        -->
+    <ul> <!--<ul> defines an unordered list and <ol> defines an ordered list-->
+        <li><a href="recipes/PorkandPotatoAdobo.html">Pork and Potato Adobo</a></li> <!--<li></li> defines a list item-->
         <li><a href="recipes/SarciadongAmpalaya.html">Sarciadong Amapalaya</a></li>
         <li><a href="recipes/PorkSinigang.html">Pork Sinigang</a></li>
+        <!--Use the <a> element to define a link
+            Use the href attribute to define the link address
+            Use the target attribute to define where to open the linked document
+            Use the <img> element (inside <a>) to use an image as a link
+        -->
     </ul>
+    <h2>A description list</h2>
+    <dl><!-- <dl></dl> defines a description list-->
+        <dt>Coffee</dt><!-- <dt></dt>Defines a term in a description list-->
+        <dd>a black/hot/cold caffeine drink</dd> <!-- <dd></dd> describes the term in a description list-->
     </body>
 </html>
