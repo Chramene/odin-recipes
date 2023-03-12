@@ -10,4 +10,20 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     }
+ul {
+    border:2px solid red;
+    display: flex;
+    flex-direction:column;
+    background-color: aquamarine;
+    color:pink;
+    text-align: center;
+    align-items: center;
+    transition: transform .1s ease-in-out right;
+    
+}
+
+li:hover {
+    transform:scale(1.2)
+}
